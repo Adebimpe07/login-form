@@ -1,0 +1,29 @@
+<body>
+  <div *ngIf="IsTrue">
+    <p>An error occurred while logging in. Please try again later.</p>
+  </div>
+  <div class="card">
+    <header class="login-cont">
+      <h1 class="login">Login</h1>
+      <span class="content"></span>
+    </header>
+    <form class="example-form">
+      <mat-form-field class="example-full-width input1">
+        <mat-label name="Username">Username</mat-label>
+        <input #input_username matInput placeholder="Username" />
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label name="Password">Password</mat-label>
+        <input #input_password matInput placeholder="Password" type="password" />
+      </mat-form-field>
+      <a href='/forget-password'>forgot password ?</a>
+      <p class="error-message" *ngIf="loginError">Invalid email or password!</p> <!-- show error -->
+    </form>
+    <button
+    style="background: #ff8a00; color: white; margin-top: 1rem"
+    mat-raised-button (click)="onSubmit()"
+  >
+    Login
+  </button>
+  </div>
+</body>

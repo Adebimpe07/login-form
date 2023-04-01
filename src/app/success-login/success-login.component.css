@@ -1,0 +1,51 @@
+body{
+    height:100vh;
+  }
+  .line {
+      height: 7px;
+      width: 20rem;
+      background-color: #FF8A00;
+      display: flex;
+      align-self: center;
+      margin-block: 1rem;
+    }
+    .login-cont{
+      display: flex;
+      justify-content:center;
+      flex-direction: column;
+      gap:3rem;
+      height: 100%;
+  
+    }
+    .login{
+      font-size: 48px;
+      font-weight: 600;
+      text-align: center;
+    }
+    img{
+      justify-self: center;
+      align-self: center;
+    }
+  
+    
+
+@media only screen and (max-width: 540px) {
+
+  body{
+    background-image: url('/assets/login_BG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+  }
+  .login-cont{
+    width:90%;
+    margin-inline: auto;
+    padding-top:24rem;
+    height: auto;
+    
+  }
+  .example-form{
+    width:95%;
+  }
+
+}
